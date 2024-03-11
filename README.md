@@ -36,8 +36,6 @@ docker images 'list images'
 
 docker ps --filter status=exited --filter status=dead -q 'Which containers are unused?'
 
-docker buildx prune -f 'REmove build-cache'
-
 ### Clean up
 docker rm [containerName] 'Remove from memory after stopping'
 
@@ -47,7 +45,17 @@ docker rmi [imageName] 'Delete the given image'
 
 docker system prune -a 'CAUTION -> Remove all unused images not just dangling ones' 
 
-docker system prune -f 'CAUTION -> REmove everything' 
+docker system prune -f 'CAUTION -> Remove everything' 
 
 docker image prune -f 'Remove all images not used by containers '
+
+docker buildx prune -f 'REmove build-cache'
+
+### Building Containers
+
+docker build -t [name:tag] 'Builds an image using the docker file located at the same directory'
+
+docker build -t [name:tag] -f [fileName] 'Builds an image using the docker file located at a different directory'
+
+docker tag [imageName] [nameTag] 'Tag an existing image'
 
