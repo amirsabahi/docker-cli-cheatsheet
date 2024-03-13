@@ -1,6 +1,6 @@
 # docker-cli-cheatsheet
 
-docker info 'Display system information'
+docker info `Display system information`
 
 docker version 'Displays the system version'
 
