@@ -59,3 +59,10 @@ docker build -t [name:tag] -f [fileName] 'Builds an image using the docker file 
 
 docker tag [imageName] [nameTag] 'Tag an existing image'
 
+### Volume
+
+docker create volume [volumeName] 'create a new volume'
+docker volume ls 'List the volumes'
+docker volume inspect [volumeName] 'Display the volume info'
+docker volume rm [volumeName] 'Deletes a volume'
+docker volume prune 'Delete all volumes not mounted'
