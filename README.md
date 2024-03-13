@@ -93,3 +93,12 @@ docker compose logs `Get the logs`
 
 docker compose exec [container] bash `Run a command in a container`
 
+docker compose --project-name [name] up -d `Run an instance as a project`
+
+docker compose -p [projectName] up -d `Shortcut for the command above`
+
+docker compose ls `List running projects`
+
+docker compose cp [containerID]:[SRC_PATH] [DEST_PATH] `Copy files from containers`
+
+docker compose cp [SRC_PATH] [containerID]:[DEST_PATH] `Copy firls to the container`
