@@ -71,3 +71,5 @@ docker volume rm [volumeName] 'Deletes a volume'
 
 docker volume prune 'CAUTION: Delete all volumes not mounted'
 
+`Run a command with volume`
+docker run -d --name devserver -v myvol:/app nginx:latest
