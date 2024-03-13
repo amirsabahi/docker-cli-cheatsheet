@@ -73,3 +73,23 @@ docker volume prune `CAUTION: Delete all volumes not mounted`
 
 docker run -d --name devserver -v myvol:/app nginx:latest `Run a command with volume`
 
+### Docker Compose
+
+docker compose build `Build the images`
+
+docker compose start `Start the containers`
+
+docker compose stop `Stop the containers`
+
+docker compose up -d `Build and start`
+
+docker compose ps `List what's running`
+
+docker compose rm `Remove from memory`
+
+docker compose down `Stop and remove`
+
+docker compose logs `Get the logs`
+
+docker compose exec [container] bash `Run a command in a container`
+
