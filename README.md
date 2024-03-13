@@ -69,5 +69,5 @@ docker volume inspect [volumeName] 'Display the volume info'
 
 docker volume rm [volumeName] 'Deletes a volume'
 
-docker volume prune 'Delete all volumes not mounted'
+docker volume prune 'CAUTION: Delete all volumes not mounted'
 
