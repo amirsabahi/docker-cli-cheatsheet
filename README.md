@@ -49,7 +49,7 @@ docker system prune -f `CAUTION -> Remove everything`
 
 docker image prune -f `Remove all images not used by containers `
 
-docker buildx prune -f `REmove build-cache`
+docker buildx prune -f `Remove build-cache`
 
 ### Building Containers
 
