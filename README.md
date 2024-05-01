@@ -75,17 +75,17 @@ docker run -d --name devserver -v myvol:/app nginx:latest `Run a command with vo
 
 ### Docker Compose
 
-docker compose build `Build the images`
+docker compose build `Build the images. Use -f to specify the file location`
 
 docker compose start `Start the containers`
 
-docker compose stop `Stop the containers`
+docker compose stop `Stop the containers but they remain in memory`
 
-docker compose up -d `Build and start`
+docker compose up -d `Build and start. Use -d to run in background`
 
 docker compose ps `List what's running`
 
-docker compose rm `Remove from memory`
+docker compose rm `Remove containers from memory`
 
 docker compose down `Stop and remove`
 
