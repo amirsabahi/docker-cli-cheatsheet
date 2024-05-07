@@ -107,8 +107,8 @@ docker compose cp [SRC_PATH] [containerID]:[DEST_PATH] `Copy firls to the contai
 
 docker login -u <username> -p <password> `Login to dockerhub`
 
-docker tag my_image image/my_image:latest `Tag the image previously built`
+docker tag my_image orginization_name/my_image:latest `Tag the image previously built`
 
-docker push image/my_image:latest `Push the image`
+docker push orginization_name/my_image:latest `Push the image`
 
-docker pull image/my_image:latest `Pull the image`
+docker pull orginization_name/my_image:latest `Pull the image`
