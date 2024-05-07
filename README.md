@@ -102,3 +102,13 @@ docker compose ls `List running projects`
 docker compose cp [containerID]:[SRC_PATH] [DEST_PATH] `Copy files from containers`
 
 docker compose cp [SRC_PATH] [containerID]:[DEST_PATH] `Copy firls to the container`
+
+### Publish to docker hub
+
+docker login -u <username> -p <password> `Login to dockerhub`
+
+docker tag my_image image/my_image:latest `Tag the image previously built`
+
+docker push image/my_image:latest `Push the image`
+
+docker pull image/my_image:latest `Pull the image`
